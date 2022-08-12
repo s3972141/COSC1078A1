@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Idea</title>
+<link rel="stylesheet" href="stylingprojectidea.css">
+  </head>
+  <header>
+    <a href="index.html">
+    <h1><b>Welcome to John's World</b></h1>
+    </a>
+    <div class="top">
+      <a href="IdealJob.html"><button>Ideal Job</button></a>
+      <a href="PersonalProfile.html"><button>Personal Profile</button></a>
+      <a href="ProjectIdea.html"><button>Project Idea</button></a>
+      </div>
+  <body>
+    <h2>Project Idea</h2>
+    <img src="pokedex.png" alt="Original Pokedex" width="25%">
+    <h3>Overview</h3>
+    <p>My project idea is a voice-controller Pokémon Database (Pokédex). In the original television series, the protagonist, Ash Ketchum, uses a camera on the back of his Pokédex, which scans the Pokémon in front of him and relays with a voice some necessary information about the Pokémon such as its type and a description of it. My idea is to replicate this but with a microphone and voice recognition instead of a camera, with the user naming the Pokémon they want information on rather than scanning it with a camera. It will then provide an image of the Pokémon, a description, the Pokémon’s type, and where the Pokémon can be found in the game.</p>
+    <h3>Motivation</h3>
+    <p>This project will be designed largely around convenience, providing a quick and easy method for Pokémon players to find relevant information they need. Nowadays there are too many Pokémon in the National Pokédex, making it almost impossible to know all of them and remember all the information for them. Very often I am finding myself picking up my phone and searching for specific Pokémon information in order to aid me through the game. This device will act as a companion to the game, speeding up that very process by eliminating the need to search up the Pokémon as the Pokédex will be there ready with the necessary information. The availability of Raspberry Pi technology will allow this device to be made with very readily available technology; and the only real struggle should be the limitations of my current programming knowledge.</p>
+    <h3>Description</h3>
+    <p>The device will have data stored in it from an open-source API designed to collect data directly from the Pokémon games. This API (PokeAPI, 2014) has drawn information directly from the game files, and therefore should provide an accurate database for the device. The Pokédex will have two buttons, a function button, and a power button. The power button will turn the device on and off, turning it off to preserve battery. The function button will be largely used to activate the voice controls. Once the function button has been pressed, the user will state the Pokémon they wish to find information on, and which generation of game they are seeking said information from. The Pokédex will then provide an audio description of the Pokémon similar to that provided by the Pokédex in the original television series. It will state the Pokémon’s name, its type, or types, and then give the game’s description of the Pokémon. On the screen, it will provide an image of the Pokémon on the top, with the Pokémon’s in-game stats, location, and type all below. From here, the function button can again be activated to look up a different Pokémon for the same information on it. </p>
+    <p>The device will be powered with a rechargeable battery, allowing it to be portable and ideally as small as possible. This will accentuate its convenience being a companion device for the player, as to not break the immersion of the game itself to look to a phone or computer to find information on the Pokémon they are encountering. The shell of the device, which will house all its components, will be red to match the Pokédex of the original series. For the same reason, the button will ideally be a grey or silver, but that will largely depend on availability and costs. The screen should take up a majority of the front of the device, and all other components fitted into the shell.</p>
+    <h3>Tools and Techniques</h3>
+    <p>The Pokédex will be built primarily around a Raspberry pi 4. Connected to this will be a 5- or 7-inch display (depending on availability), a simple and small USB microphone in order to record voice commands, a button to activate said voice commands, and a shell to hold all of it together as a single device. It will take advantage of the open-source API that takes data directly from the various game’s ROM (PokeAPI, 2014). This will provide the most accurate data possible for the user. The device will also require a rechargeable battery, to allow it to be a portable and convenient device. To relay the description and type of the Pokémon by voice, the device will most likely take advantage of Festival, a free text to speech software that is based on C++ (Black, et al., 2017).</p>
+    <h3>Skills Required</h3>
+    <p>To develop an entire front-end for the raspberry pi to display the API’s information, knowledge of python and html would be required. The API is by default provided as HTML format, but python 3 wrappers are available for it. Software would need to be written that can detect the voice from the microphone, determine what Pokémon the user is asking about, and search the database for that Pokémon’s data in order to display that data on the screen as well as provide a voice description of the Pokémon. As well as this, programming the button to activate voice controls will require further skills that I am not yet capable of.</p>
+    <h3>Outcome</h3>
+    <p>The outcome of this product will provide any Pokémon players with the option to play the games in an even more immersive way. Needing to stop playing to search up information on Pokémon often has a jarring effect and this will aim to overcome that by being ready to use at any time alongside the game, so the player never has to stop playing. A product like this also has a nostalgia factor, as many remember the original Pokédex from the television series with fond memories associated to it.</p>
